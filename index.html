@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://maze-development.com">
   <title>Redirecting...</title>
+
+  <script>
+    (function () {
+      const path = window.location.pathname;
+
+      // redirect rules
+      if (path === "/" || path === "/workspace") {
+        window.location.replace("https://maze-development.com");
+      } else {
+        window.location.replace("https://maze-development.com");
+      }
+    })();
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="https://maze-development.com">Maze Development</a>...</p>
+  <p>Redirecting...</p>
 </body>
 </html>
